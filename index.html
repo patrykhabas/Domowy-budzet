@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styl.css" />
+    <link rel="stylesheet" href="style1.css" />
+
+    <title>Twoj Budzet Domowy</title>
+  </head>
+  <body>
+    <div id="logo">
+      <img id="img_logo" src="zdjecia/logo.jpg" alt="logo" />
+    </div>
+    <div>
+      <h2 id="amount_available"></h2>
+    </div>
+    <div id="container_budget">
+      <section id="income">
+        <h2>Przychody</h2>
+
+        <input id="name_income" type="text" placeholder="Nazwa przychodu" />
+        <input id="amount_income" type="number" placeholder="Kwota" />
+        <input id="add_income" type="button" value="DODAJ" />
+        <ol id="list_income"></ol>
+        <h3 id="income_sum"></h3>
+      </section>
+
+      <section id="expenses">
+        <h2>Wydatki</h2>
+        <input id="name_expense" type="text" placeholder="Nazwa wydatku" />
+        <input id="amount_expense" type="number" placeholder="Kwota" />
+        <input id="add_expense" type="button" value="DODAJ" />
+        <ol id="list_expenses"></ol>
+        <h3 id="expense_sum"></h3>
+      </section>
+    </div>
+
+    <script type="module" src="index.js"></script>
+  </body>
+</html>

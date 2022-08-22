@@ -1,0 +1,430 @@
+:root {
+  --color-dark-bgc: rgba(241, 241, 241, 0);
+  --color-light-bgc: rgba(30, 29, 29, 0.782);
+
+  --color-dark-inc: rgb(40, 108, 40);
+  --color-light-inc: rgba(59, 255, 75, 0.224);
+
+  --color-dark-exp: rgb(144, 24, 0);
+  --color-light-exp: rgba(255, 17, 0, 0.435);
+
+  --color-dark-ol: rgba(0, 0, 0, 0);
+  --color-light-ol: rgba(255, 255, 255, 0.782);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+@media screen and (max-width: 473px) {
+  html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  body {
+    background-image: url(zdjecia/monety-pln.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+  }
+  #logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  img {
+    width: 20%;
+    height: 10%;
+  }
+  h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  #amount_available {
+    background: linear-gradient(
+      to top left,
+      var(--color-dark-bgc),
+      var(--color-light-bgc)
+    );
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 10px 10px 11px 3px rgb(66 68 90);
+    padding: 10px;
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #container_budget {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #income {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    background: linear-gradient(
+      to top left,
+      var(--color-dark-inc),
+      var(--color-light-inc)
+    );
+
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 10px 10px 11px 3px rgb(66 68 90);
+  }
+  #expenses {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    background: linear-gradient(
+      to top left,
+      var(--color-dark-exp),
+      var(--color-light-exp)
+    );
+    margin-top: 25px;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 10px 10px 11px 3px rgb(66 68 90);
+  }
+  input {
+    display: flex;
+    border: none;
+    border-radius: 18px;
+    margin: 10px;
+    padding: 5px 10px;
+  }
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 69px;
+    border: none;
+    border-radius: 18px;
+    margin: 10px;
+    padding: 5px;
+  }
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    font-size: large;
+    margin-top: 20px;
+  }
+  ol {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(
+      to top left,
+      var(--color-dark-ol),
+      var(--color-light-ol)
+    );
+    width: 467px;
+    border-radius: 20px 20px 20px 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #list_income :no-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+  ::placeholder {
+    margin-left: 10px;
+  }
+}
+h3 {
+  margin-top: 20px;
+}
+
+/*  brekpoint 473+   */
+
+@media only screen and (min-width: 473px) and (max-width: 959px) {
+  html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  body {
+    background-image: url(zdjecia/monety-pln.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+  }
+  #logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  img {
+    width: 20%;
+    height: 10%;
+  }
+  h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  #amount_available {
+    background: linear-gradient(
+      to top left,
+      var(--color-dark-bgc),
+      var(--color-light-bgc)
+    );
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 10px 10px 11px 3px rgb(66 68 90);
+    padding: 10px;
+    margin: 20px auto;
+    width: 467px;
+  }
+
+  #container_budget {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 467px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #income {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 467px;
+    background: linear-gradient(
+      to top left,
+      var(--color-dark-bgc),
+      var(--color-light-bgc)
+    );
+
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 10px 10px 11px 3px rgb(66 68 90);
+  }
+  #expenses {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 467px;
+    background: linear-gradient(
+      to top left,
+      var(--color-dark-bgc),
+      var(--color-light-bgc)
+    );
+    margin-top: 25px;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 10px 10px 11px 3px rgb(66 68 90);
+  }
+  input {
+    display: flex;
+    border: none;
+    border-radius: 18px;
+    margin: 10px;
+    padding: 5px 10px;
+  }
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 69px;
+    border: none;
+    border-radius: 18px;
+    margin: 10px;
+    padding: 5px;
+  }
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    font-size: large;
+    margin-top: 20px;
+  }
+  ol {
+    display: flex;
+    align-items: center;
+
+    flex-direction: column;
+    background: linear-gradient(
+      to top left,
+      var(--color-dark-ol),
+      var(--color-light-ol)
+    );
+    width: 467px;
+    border-radius: 20px 20px 20px 20px;
+  }
+  #list_income :no-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+  ::placeholder {
+    margin-left: 10px;
+  }
+}
+h3 {
+  margin-top: 20px;
+}
+
+/*  brekpoint 959+   */
+@media screen and (min-width: 959px) {
+  html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  body {
+    background-image: url(zdjecia/calculator-ge40a7724b_1920.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+  }
+  #logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  img {
+    width: 20%;
+    height: 10%;
+  }
+  h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  #amount_available {
+    background: linear-gradient(
+      to top left,
+      var(--color-dark-bgc),
+      var(--color-light-bgc)
+    );
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 10px 10px 11px 3px rgb(66 68 90);
+    padding: 10px;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    color: bisque;
+  }
+
+  #container_budget {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #income {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    background: linear-gradient(
+      to top left,
+      var(--color-dark-inc),
+      var(--color-light-inc)
+    );
+    margin-top: 25px;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 10px 10px 11px 3px rgb(66 68 90);
+  }
+  #expenses {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    background: linear-gradient(
+      to top left,
+      var(--color-dark-exp),
+      var(--color-light-exp)
+    );
+    margin-top: 25px;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 10px 10px 11px 3px rgb(66 68 90);
+  }
+  input {
+    display: flex;
+    border: none;
+    border-radius: 18px;
+    margin: 10px;
+    padding: 5px 10px;
+  }
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 69px;
+    border: none;
+    border-radius: 18px;
+    margin: 10px;
+    padding: 5px;
+  }
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    font-size: large;
+    margin-top: 20px;
+  }
+  ol {
+    display: flex;
+    align-items: center;
+
+    flex-direction: column;
+    background: linear-gradient(
+      to top left,
+      var(--color-dark-ol),
+      var(--color-light-ol)
+    );
+    width: 467px;
+    border-radius: 20px 20px 20px 20px;
+  }
+  #list_income :no-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+  ::placeholder {
+    margin-left: 10px;
+  }
+}
+h3 {
+  margin-top: 20px;
+}
